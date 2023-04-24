@@ -1,3 +1,9 @@
+const INFURA_API_KEY = "MYKEY";
+const MNEMONIC = "MYMNEMONIC"
+const HDWalletProvider = require('truffle-hdwallet-provider');
+
+
+
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
@@ -38,7 +44,6 @@ module.exports = {
    *
    * $ truffle test --network <network-name>
    */
-
   networks: {
     // Useful for testing. The `development` name is special - truffle uses it by default
     // if it's defined here and no other network is specified at the command line.
@@ -51,6 +56,14 @@ module.exports = {
       port: 9545,            // Standard Ethereum port (default: none)
       network_id: "*",       // Any network (default: none)
     },
+    sepolia: {
+
+      provider: () => {
+        return new HDWalletProvider(MNEMONIC, "https://sepolia.infura.io/v3/"+INFURA_API_KEY)
+      },
+      network_id: '11155111',
+      gas: 4465030
+    }
 
     // Another network with more advanced options...
     // advanced: {

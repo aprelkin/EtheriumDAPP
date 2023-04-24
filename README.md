@@ -1,3 +1,20 @@
+Truffle v5.8.2 (core: 5.8.2)
+
+Ganache v7.7.7
+Solidity - 0.6.2 (solc-js)
+Node v16.13.1
+Web3.js v1.8.2
+
+OpenZeppelin: "openzeppelin-solidity": "^3.4.2",
+
+Your ERC-721   "Stars Notary Token"
+Your ERC-721 Token Symbol   "STAR"
+contract address on Sepolia:    0x8b5e8517A5af211e3cb68F3E05a46A49fbD5bc23
+account Sepolia:             0xe946F6081990552E9398965805C07EF1F384a410
+
+
+
+
 # ND1309 C2 Ethereum Smart Contracts, Tokens and Dapps - Project Starter 
 **PROJECT: Decentralized Star Notary Service Project** - For this project, you will create a DApp by adding functionality with your smart contract and deploy it on the public testnet.
 
